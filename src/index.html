@@ -2,14 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>De-CifrApp</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <section>
+        
+        <header>
+            <h1>-De-CifrApp-</h1>
+            <p>Codifica y Decodifica tus mensajes</p>
+        </header>
+
+        <div>
+            <p>Ingrese Su Mensaje:</p>
+            <textarea id="msg-encode" class="msg-style" placeholder="Ingrese su mensaje..."></textarea>
+            <div class="content-offset">
+                <p>Ingrese N° de desplazamiento</p>
+                <input type="number" id="content-offset">
+            </div>
+            <button id="btn_encode" class="btn-encode">Codifica tu Mensaje</button>
+            <button id="btn_code" class="btn-code">Decodifica tu Mensaje</button>
+            <div id="msg-encode">
+                <p id="msg-encode"></p>
+            </div>
+            <button class="btn_clear">Limpiar</button>
+        </div>
+    </section>
+  
+
     <div id="root">
-      <h1>Hola mundo!</h1>
-      <p>Realizando pruebas</p>
-      <input type="text">
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
