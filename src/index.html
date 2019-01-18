@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>De-CifrApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
-    <section>
+    <section id="content_genel" class="content_gen_style">
         
-        <header>
-            <h1>-De-CifrApp-</h1>
+        <header id="content_head" class="head_style">
+            <h1><i class="fas fa-low-vision"></i> CIFR-APP </h1>
             <p>Codifica y Decodifica tus mensajes</p>
         </header>
 
-        <div>
+        <div class="content_style">
             <p>Ingrese Su Mensaje:</p>
             <textarea id="str_recive" class="str_style" placeholder="Ingrese su mensaje..."></textarea>
             <div class="content_offset">
-                <p>Ingrese N° de desplazamiento</p>
+                <label>Ingrese N° de desplazamiento</label>
                 <input type="number" id="offset">
             </div>
-            <button id="btn_encode">Codifica tu Mensaje</button>
-            <button id="btn_decode" >Decodifica tu Mensaje</button>
+            <button id="btn_encode" class="button_style"><i class="fas fa-lock"></i> Codifica </button>
+            <button id="btn_decode" class="button_style"><i class="fas fa-lock-open"></i> Decodifica </button>
             <div id="encode">
-                <p id="str_result"></p>
+                <p id="str_result" class="result_style str_style"></p>
             </div>
-            <button class="btn_clear">Limpiar</button>
+            <button class="button_style">Limpiar</button>
         </div>
     </section>
   
