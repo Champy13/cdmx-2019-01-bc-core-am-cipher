@@ -9,7 +9,6 @@ body{
     background: #d1d8e0;
     padding: 10px 20px 10px 20px;
     width: 600px;
-    height:800px ;
     border-radius: 20px;
 }
 
@@ -19,8 +18,13 @@ body{
 
 
 }
-.str_style{
+.result_style{
+    margin-left: 46px;
+}
 
+.str_style{
+    color: white;
+    font-size: 16px;
     background-color: #778ca3;
     border: 1px solid #000000;
     width: 500px;
@@ -44,6 +48,10 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     }
-
-
+.button_style:hover {
+    background: white;
+    border: 1px solid #d1d8e0;
+    color: black;
+    cursor: pointer;
+}
 
