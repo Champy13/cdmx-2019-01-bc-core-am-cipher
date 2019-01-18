@@ -20,6 +20,7 @@ body{
 }
 .result_style{
     margin-left: 46px;
+    margin-top: 15px;
 }
 
 .str_style{
@@ -45,8 +46,7 @@ body{
     font-size: 16px;
     transition-duration: .5s;
     margin-top: 15px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
+    width: 150px;
     }
 .button_style:hover {
     background: white;
