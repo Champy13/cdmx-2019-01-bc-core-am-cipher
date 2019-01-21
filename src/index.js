@@ -14,4 +14,10 @@ function decode_btn() {
     document.getElementById("str_result").innerHTML = window.cipher.decode(offset_decode,string_decode);
 }
 
+document.getElementById("btn_clear").addEventListener("click", clear_btn);
 
+function clear_btn(){
+    document.getElementById("offset").reset();
+    document.getElementById("str_recive").reset();
+    document.getElementById("str_result").innerHTML = "";
+}

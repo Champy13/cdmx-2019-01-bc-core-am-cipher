@@ -1,12 +1,24 @@
 window.cipher = {
   encode: (offset, string) => {
-
     let str_encode = '';
+      
+    for (let i = 0; i < string.length; i++){
+      let charac_str = string[i];
+      
+      if(charac_str.match(/[a-z]/i)){
+        
+        if(string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
+          let charac_ascii = (string.charCodeAt(i) - 65 + offset) % 26 + 65;
+          str_encode += String.fromCharCode(charac_ascii);
+      
+        } else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+          let charac_ascii = (string.charCodeAt(i) + 97 - parseInt(offset)) % 26 + 97;
+          str_encode += String.fromCharCode(charac_ascii);  
+        }
 
-    for (let i = 0; i < string.length; i++) {
-      let charac_ascii = (string.charCodeAt(i) - 65 + offset) % 26 + 65;
-      let charac_encode = String.fromCharCode(charac_ascii);
-      str_encode += charac_encode;
+        }else{
+          str_encode += charac_str; 
+      } 
     }
     return str_encode;
   },
@@ -16,9 +28,23 @@ window.cipher = {
     let str_decode = '';
 
     for (let i = 0; i < string.length; i++) {
-      let charac_ascii = (string.charCodeAt(i) + 65 - offset) % 26 + 65;
-      let charac_decode = String.fromCharCode(charac_ascii);
-      str_decode += charac_decode;
+
+      let charac_str = string[i];
+      
+      if(charac_str.match(/[a-z]/i)){
+        
+        if(string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
+          let charac_ascii = (string.charCodeAt(i) + 65 - offset) % 26 + 65;
+          str_decode += String.fromCharCode(charac_ascii);
+      
+        } else if (string.charCodeAt(i)>=97 && string.charCodeAt(i)<=122){
+          let charac_ascii = (string.charCodeAt(i) + 97 - parseInt(offset)) % 26 + 97;
+          str_decode += String.fromCharCode(charac_ascii);  
+        }
+
+        }else{
+          str_decode += charac_str; 
+      } 
     }
     return str_decode;
   }
