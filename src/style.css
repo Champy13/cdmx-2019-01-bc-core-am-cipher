@@ -35,6 +35,7 @@ body{
 .content_style{
     
     font-size: 20px;
+    
 }
 
 .button_style{
@@ -43,10 +44,10 @@ body{
     border-radius: 50px;
     padding: 10px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     transition-duration: .5s;
     margin-top: 15px;
-    width: 150px;
+    width: 200px;
     }
 .button_style:hover {
     background: white;
