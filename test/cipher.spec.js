@@ -19,9 +19,7 @@ describe('cipher', () => {
     // el test a continuación .
     
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
-      assert.equal(
-        cipher.encode(33,'abcdefghijklmnopqrstuvwxyz'),
-        'hijklmnopqrstuvwxyzabcdefg');
+      assert.equal(cipher.encode(33,'abcdefghijklmnopqrstuvwxyz'),'hijklmnopqrstuvwxyzabcdefg');
     });
 
     
