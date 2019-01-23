@@ -1,5 +1,6 @@
 body{
     background-image: url(https://images.unsplash.com/photo-1546479828-09d4227ec6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80)
+    
 }
 
 .content_gen_style{
@@ -8,7 +9,7 @@ body{
     margin-right: auto;
     background: #d1d8e0;
     padding: 10px 20px 10px 20px;
-    width: 600px;
+    width: 50%;
     border-radius: 20px;
 }
 
