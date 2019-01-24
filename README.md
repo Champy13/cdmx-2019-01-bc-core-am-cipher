@@ -30,7 +30,7 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
    pruebas unitarias (unit tests) con el comando `npm run test`.
 
-##Consideraciones técnicas
+## Consideraciones técnicas
 
 Este proyecto está desarrollado con:
 - EMS6 JavaScriptpuro [JSVanilla](https://medium.com/laboratoria-developers/vanillajs-vs-jquery-31e623bbd46e).
