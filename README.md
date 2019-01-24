@@ -29,13 +29,16 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
    incluye [npm](https://docs.npmjs.com/)).
 6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
    pruebas unitarias (unit tests) con el comando `npm run test`.
+
 ##Consideraciones técnicas
+
 Este proyecto está desarrollado con:
 - EMS6 JavaScriptpuro [JSVanilla](https://medium.com/laboratoria-developers/vanillajs-vs-jquery-31e623bbd46e).
 -CSS3
 -HTML5
 - Se realizaron [pruebas unitarias]() para validar la funcionalidad de codificación y decodificación. Estos test se implementaron con [Mocha](https://mochajs.org/) y assertion library de [Chai](https://www.chaijs.com/).
 - Como gestor de proyecto de utilizó NPM (Node Package Manager).
+
 ## Testing & Guías de Estilo
 Las pruebas automatizadas para este sistema requieren de una instalación simple a través del comando npm install. Los tests verifican que regrese una letra acorde a la posición ingresada en el offset. 
 
@@ -71,7 +74,7 @@ entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"
 En cuanto a reglas/guías de estilo en sí,
 usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 ## Autores
--Cristal García 
+-Erandi Cuervo 
 ## Expresiones de gratitud
 Agradezco el apoyo de mi squad "Guacacoders".  
 # UX-UI
