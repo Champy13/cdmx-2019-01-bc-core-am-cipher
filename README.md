@@ -36,7 +36,8 @@ Este proyecto está desarrollado con:
 - EMS6 JavaScriptpuro [JSVanilla](https://medium.com/laboratoria-developers/vanillajs-vs-jquery-31e623bbd46e).
 -CSS3
 -HTML5
-- Se realizaron [pruebas unitarias]() para validar la funcionalidad de codificación y decodificación. Estos test se implementaron con [Mocha](https://mochajs.org/) y assertion library de [Chai](https://www.chaijs.com/).
+- Se realizaron [pruebas unitarias]() para validar la funcionalidad de codificación y decodificación. 
+  Estos test se implementaron con [Mocha](https://mochajs.org/) y assertion library de [Chai](https://www.chaijs.com/).
 - Como gestor de proyecto de utilizó NPM (Node Package Manager).
 
 ## Testing & Guías de Estilo
@@ -74,8 +75,53 @@ entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"
 En cuanto a reglas/guías de estilo en sí,
 usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 ## Autores
--Erandi Cuervo 
+- Erandi Cuervo 
 ## Expresiones de gratitud
 Agradezco el apoyo de mi squad "Guacacoders".  
 # UX-UI
-Para conocer el proceso de diseño con el que se desarrollo este producto consultar el siguiente link:
+## Usuario
+Cliente modelo:
+
+Carla Cervantes es una joven de 17 años que busca una manera de enviar mensajes a su novio, amigos etc y que únicamente ellos puedan saber la manera de descifrarlos. El motivo por el que tiene esta necesidad es debido a que ocasionalmente a sorprendido a su hermana menor tomando su celular y leyendo sus conversaciones, lo que le ha generado problemas con su mamá pues la ha acusado en repetidas ocasiones de algunos planes que ha hecho sin el consentimiento de sus padres.
+
+
+## Interface
+El usuario ingresa el mensaje que desee cifrar o descifrar, el mensaje puede incluir mayúsculas, minúsculas, espacios, números etc...Posteriormente puede elegir número de espacios que se va a implementar como ( offset ) saltos que se darán en el alfabeto.
+
+## Bocetos 
+
+En un principio no estaba claro si se iba a implementar una caja de texto para cifrar, otra para descifrar y una donde se mostrara el resultado, también se sugería que la forma del botón fuera rectangular en el primer bosquejo solo existía un botón y el offset se decidía en el inicio de la pag .
+
+Posteriormente se decidió tener una caja de texto donde se ingrese el texto ya sea para cifrar o descifrar y se encuentra otra donde se muestra el resultado, se optó por 2 botones uno para cada acción y al final uno que limpie los campos.
+
+![caeser-cipher](./src/Bocetos.png)
+
+## Muestra Final
+
+El resultado final ayuda a nuestro usuario a dar solución a su problema con solo ingresar a esta aplicación donde lo único que necesita es ingresar el texto y el número de desplazamientos que desee, obtendrá un mensaje codificado que solo podrá leer la persona que cuente con la información necesaria para el decodificado del mensaje, haciendo que sus conversaciones tengan un mayor grado de seguridad.
+
+![caeser-cipher](./src/Desktop.png)
+
+## -Intrucciónes de uso
+
+Para Cifrar:
+
+- Ingresar texto a cifrar.
+- Elegir un offset de desplazamiento.
+- Oprime boton "Codificar".
+- Recibe tu mensaje codificado.
+- Oprime boton "limpiar" para refrescar y volver a utilizar.
+
+Para Descifrar:
+
+- Ingresar texto a descifrar.
+- Elegir un offset de desplazamiento (el mismo que se utilizo para codificar).
+- Oprime boton "decodifica tu mensaje".
+- Recibe tu mensaje decodificado.
+- Oprime boton "limpiar" para refrescar y volver a utilizar.
+
+
+# Enlace Deploy
+
+[Sitio Terminado](https://champy13.github.io/cdmx-2019-01-bc-core-am-cipher/src/)
+
