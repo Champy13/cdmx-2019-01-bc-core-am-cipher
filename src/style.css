@@ -1,7 +1,7 @@
 body{
-    background-image: url(https://images.unsplash.com/photo-1546479828-09d4227ec6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80);
+    background-image: url("image_fond.gif");
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .content_gen_style{
@@ -12,11 +12,12 @@ body{
     padding: 10px 20px 10px 20px;
     width: 50%;
     border-radius: 20px;
+    
 }
 
-.head_style h1{
+.head_style {
     font-family: 'Black Ops One', cursive;
-    font-size: 4vw;
+    font-size: 30px;
 
 
 }
@@ -27,14 +28,16 @@ body{
 
 .str_style{
     color: white;
-    font-size: 1vw;
-    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5vw;
+    font-family: 'Quantico', sans-serif;
     background-color: #778ca3;
     border-bottom: 5px inset #1C6EA4; 
     border-radius: 0px 30px 0px 30px;   
     width: 80%;
     height: 100px;
     margin: 20px;
+    overflow-y: hidden;
+    resize: none;
     box-shadow: 0px 10px 13px -7px #000000, 10px 14px 6px 0px rgba(0,0,0,0.12); 
 }
 .content_style{
@@ -51,7 +54,7 @@ body{
     color: white;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     font-size: 20px;
-    transition-duration: .5s;
+    transition-duration: .15s;
     margin-top: 15px;
     width: 200px;
     }
